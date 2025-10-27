@@ -109,6 +109,27 @@
                     </h2>
                     <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
                 </div>
+
+                 <table class="table">
+                <thead>
+                    <tr>
+                        <th>nombre</th>
+                        <th>precio</th>
+                        <th>categoriaID</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor ="let p of productos">
+                        <td>{{p.nombre}} </td>
+                        <td>{{p.precio}} </td>
+                        <td>{{p.categoria_id}} </td>
+                    </tr>
+                </tbody>
+
+                </table>
+
+
+
             </div>
         </section>
         <!-- App badge section-->
